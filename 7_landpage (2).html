@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keychain by AER – Modern Version</title>
+
+    <!-- FONT LUCU -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fcecff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #ff81d0;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 12px;
+            background: #ff9de7;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ⭐ HERO ANIMATED BACKGROUND */
+        .hero {
+            background: url('images/56ff0170-2454-4404-b7e4-15169eb29e2e.png') repeat;
+            background-size: cover;
+            animation: gerakBg 40s linear infinite;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        @keyframes gerakBg {
+            0% { background-position: 0 0; }
+            100% { background-position: 2000px 0; }
+        }
+
+        .hero-title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 70px;
+            line-height: 1.1;
+            text-shadow:
+                4px 4px 10px rgba(0,0,0,0.5),
+                0 0 25px rgba(255,100,200,0.8);
+        }
+
+        section {
+            padding: 40px;
+            width: 90%;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Fredoka One', cursive;
+            color: #cc007a;
+        }
+
+        /* ⭐ PRODUK GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* ⭐ CARD PRODUK */
+        .card {
+            background: #ffe6fa;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #8b0b6c;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            color: #5a0a4a;
+            margin-bottom: 8px;
+        }
+
+        .btn-order {
+            background-color: #ff47c1;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-order:hover {
+            background-color: #ce009e;
+        }
+
+        /* ⭐ BUTTON REQUEST UTAMA */
+        .btn-main {
+            background-color: #ff47c1;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .btn-main:hover {
+            background-color: #ce009e;
+        }
+
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            border: 1px solid #aaa;
+            font-size: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            background: #d68aff;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { font-size: 38px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Keychain by AER</h1>
+        <p>Keychain lucu & pastel estetik ✨</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#request">Request Produk</a>
+    </nav>
+
+    <!-- ⭐ HERO -->
+    <section class="hero" id="beranda">
+        <div class="hero-title">Crafting Beauty<br>with Love ✨</div>
+    </section>
+
+    <!-- ⭐ TENTANG -->
+    <section id="tentang">
+        <h2>Tentang Kami</h2>
+
+        <p style="text-align:center; max-width:750px; margin:auto; font-size:17px; line-height:1.6;">
+            Keychain by AER adalah brand kerajinan tangan kreatif yang dibuat oleh tiga sahabat:
+            <b>Egi Oktavia</b>, <b>Revalia Nurmayanti</b>, dan <b>Aula Hoviah</b>.
+            Kami menciptakan berbagai gantungan kunci, boneka lucu, bunga handmade, serta buket estetik
+            dari bahan craft premium. Setiap karya dibuat dengan ketelitian, dedikasi, dan sentuhan personal
+            agar menghasilkan produk yang bukan hanya indah, tapi juga bermakna.
+        </p>
+
+        <div style="display:flex; justify-content:center; margin-top:25px;">
+            <img src="images/330903c7-9682-4810-8640-8fa232d20850.png" style="width:45%; border-radius:10px;">
+        </div>
+    </section>
+
+    <!-- ⭐ PRODUK -->
+    <section id="layanan">
+        <h2>Produk Kami</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="images/fae25513-1d8a-49d2-a287-dfeaeb11f987.png">
+                <div class="product-name"><h3>Keychain Planet Lucu</h3></div>
+                <div class="price">Rp 15.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/e6aaa667-a05a-4c83-8be1-ee175cb38a73.png">
+                <div class="product-name"><h3>Keychain Bebek Couple</h3></div>
+                <div class="price">Rp 25.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/56ff0170-2454-4404-b7e4-15169eb29e2e.png">
+                <div class="product-name"><h3>Buket Bunga Craft</h3></div>
+                <div class="price">Rp 45.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/27c76862-1614-4701-9c58-8ae8a4f01a80.png">
+                <div class="product-name"><h3>Cermin Hias Bunga</h3></div>
+                <div class="price">Rp 30.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/8b68ad4c-dbf5-4577-b341-78cb96a7ee60.png">
+                <div class="product-name"><h3>Kue Hias Craft</h3></div>
+                <div class="price">Rp 28.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/661c4a0c-52b8-4103-a63b-2244285c7173.png">
+                <div class="product-name"><h3>Headband Bunga Handmade</h3></div>
+                <div class="price">Rp 18.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/f9359e7b-ec3c-4eb6-921b-e017549063f5.png">
+                <div class="product-name"><h3>Pulpen Cupcake Lucu</h3></div>
+                <div class="price">Rp 10.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/0359994d-c83d-4f06-acc1-63f91e100f47.png">
+                <div class="product-name"><h3>Tempat Pensil Jerapah</h3></div>
+                <div class="price">Rp 22.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="images/485f0dcd-008c-4704-9dfb-35f5dc5dcf4b.png">
+                <div class="product-name"><h3>Keychain Mobil Lucu</h3></div>
+                <div class="price">Rp 12.000</div>
+                <button class="btn-order">Pesan Sekarang</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ⭐ FORM REQUEST -->
+    <section id="request">
+        <h2>Request Produk Custom</h2>
+
+        <p style="text-align:center; max-width:650px; margin:auto; font-size:17px;">
+            Ingin request bentuk keychain, buket, boneka, atau craft lain yang kamu mau?  
+            Isi form di bawah ini dan kami akan buatkan khusus untuk kamu ✨
+        </p>
+
+        <form style="margin-top:25px; max-width:600px; margin:auto;">
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+
+            <select required>
+                <option value="">Pilih Jenis Produk</option>
+                <option>Keychain</option>
+                <option>Buket</option>
+                <option>Boneka Craft</option>
+                <option>Aksesoris Custom</option>
+                <option>Request Lainnya</option>
+            </select>
+
+            <textarea rows="5" placeholder="Deskripsi request Anda..." required></textarea>
+
+            <button class="btn-main">Kirim Request</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; Keychain by AER 2025
+    </footer>
+
+</body>
+</html>
